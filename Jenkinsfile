@@ -2,7 +2,7 @@
 
 def configMap = [
     PROJECT : "roboshop",
-    COMPONENT : "catalogue"
+    COMPONENT : "catalogue "
 ]
 if ( ! env.BRANCH_NAME.equalsIgnoreCase('main') ){ // if not equals to main
     nodejsEKSPipeline(configMap) // by default it will call, call function inside this pipeline
